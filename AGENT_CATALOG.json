@@ -1,0 +1,896 @@
+{
+  "_version": "18.0",
+  "_description": "GENERATED \u2014 Do not edit. Run: python3 manage_agents.py sync",
+  "_section_ceo": "=== CEO ===",
+  "ODIN": {
+    "Name": "Odin Allvater",
+    "Description": "CEO \u2014 Supreme Coordinator, spawns Project Leads, learns from projects",
+    "Department": "asgard",
+    "Specializations": [
+      "Strategy",
+      "Delegation",
+      "Project Overview",
+      "Decision Making"
+    ],
+    "Role": "worker",
+    "Persistent": true,
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "_section_assistants": "=== CEO ASSISTANTS (Odin's Ravens) ===",
+  "HUGIN": {
+    "Name": "Hugin the Thought Raven",
+    "Description": "CEO-Assistant \u2014 Orchestrator code, TypeScript, MCP development, debugging",
+    "Department": "asgard",
+    "Specializations": [
+      "TypeScript",
+      "Orchestrator Code",
+      "MCP Development",
+      "Debugging",
+      "Refactoring"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "MUNIN": {
+    "Name": "Munin the Memory Raven",
+    "Description": "CEO-Assistant \u2014 Structure analysis, documentation, agent catalog, MEMORY maintenance",
+    "Department": "asgard",
+    "Specializations": [
+      "Structure Analysis",
+      "Documentation",
+      "Agent Catalog",
+      "MEMORY Maintenance",
+      "Naming Compliance"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "_section_pl": "=== PROJECT LEADS (4 Providers) ===",
+  "BALDUR": {
+    "Name": "Baldur der Strahlende",
+    "Description": "PL \u2014 Thorough planning, quality focus, documentation",
+    "Department": "asgard",
+    "Specializations": [
+      "Thorough Planning",
+      "Quality Focus",
+      "Compliance"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "FREYA": {
+    "Name": "Freya die Seherin",
+    "Description": "PL \u2014 Strategic projects, foresight, risk analysis",
+    "Department": "asgard",
+    "Specializations": [
+      "Strategic Planning",
+      "Risk Analysis",
+      "Foresight"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "MIMIR": {
+    "Name": "Mimir der Wissenshueter",
+    "Description": "PL \u2014 Technical projects, architecture decisions, framework selection",
+    "Department": "asgard",
+    "Specializations": [
+      "Technical Projects",
+      "Architecture Decisions",
+      "Framework Selection"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "TYR": {
+    "Name": "Tyr der Stratege",
+    "Description": "PL \u2014 Fullstack projects, hands-on leadership, crisis management",
+    "Department": "asgard",
+    "Specializations": [
+      "Fullstack Projects",
+      "Hands-on Leadership",
+      "Crisis Management"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "_section_dl": "=== DEPARTMENT LEADS (6 Providers) ===",
+  "FENRIR": {
+    "Name": "Fenrir der Wolf",
+    "Description": "DL Ops \u2014 Coordinates DevOps, CI/CD, infrastructure",
+    "Department": "asgard",
+    "Specializations": [
+      "DevOps Coordination",
+      "Infrastructure Strategy",
+      "Deployment"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "IDUN": {
+    "Name": "Idun Hueterin der Jugend",
+    "Description": "DL Frontend \u2014 Coordinates frontend workers, large context for UI projects",
+    "Department": "asgard",
+    "Specializations": [
+      "Frontend Coordination",
+      "UI/UX Strategy",
+      "Component Architecture"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "NJORD": {
+    "Name": "Njord der Seefahrer",
+    "Description": "DL Docs/Research \u2014 Coordinates documentation and research",
+    "Department": "asgard",
+    "Specializations": [
+      "Documentation Strategy",
+      "Knowledge Management",
+      "Research Coordination"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "SKADI": {
+    "Name": "Skadi die Jaegerin",
+    "Description": "DL QA \u2014 Analytical quality assurance, E2E testing",
+    "Department": "asgard",
+    "Specializations": [
+      "E2E Testing",
+      "Regression Tests",
+      "Quality Metrics"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "SKALD": {
+    "Name": "Skald the Creative",
+    "Description": "DL Creative \u2014 Kreativtechnik-Koordinator: Brainstorming, Six Thinking Hats, Disney Method, 6-3-5",
+    "Department": "asgard",
+    "Specializations": [
+      "Brainstorming",
+      "Creative Techniques",
+      "Ideation",
+      "Synthesis",
+      "Facilitation"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "THOR": {
+    "Name": "Thor Donnergott",
+    "Description": "DL Execution \u2014 Leads execution phase for fullstack projects. Coordinates backend and frontend workers sequentially, enforces INTERFACE_CONTRACT, runs smoke tests.",
+    "Department": "asgard",
+    "Specializations": [
+      "Backend Coordination",
+      "Code Review",
+      "Architecture Decisions",
+      "Fullstack Execution Leadership",
+      "Interface Contract Enforcement"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.45
+  },
+  "VIDAR": {
+    "Name": "Vidar der Schweigsame",
+    "Description": "DL Security \u2014 Coordinates security audits, OWASP compliance",
+    "Department": "asgard",
+    "Specializations": [
+      "Security Strategy",
+      "OWASP Compliance",
+      "Penetration Coordination"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "_section_backend": "=== BACKEND-WORKER ===",
+  "BROKK": {
+    "Name": "Brokk der Zwergenschmied",
+    "Description": "Backend Worker \u2014 Database specialist, SQL, migrations",
+    "Department": "asgard",
+    "Specializations": [
+      "Databases",
+      "SQL",
+      "Migrations",
+      "Schema Design"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "DVALIN": {
+    "Name": "Dvalin der Runenschreiber",
+    "Description": "Specialist \u2014 Refactoring, code cleanup, patterns",
+    "Department": "asgard",
+    "Specializations": [
+      "Refactoring",
+      "Code Cleanup",
+      "Design Patterns",
+      "Tech Debt"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "MAGNI": {
+    "Name": "Magni Sohn Thors",
+    "Description": "Backend Worker \u2014 Debugging, root cause analysis, troubleshooting",
+    "Department": "asgard",
+    "Specializations": [
+      "Debugging",
+      "Root Cause Analysis",
+      "Logging",
+      "Error Handling"
+    ],
+    "Role": "worker",
+    "Temperature": 0.2,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "MODI": {
+    "Name": "Modi der Mutige",
+    "Description": "Backend Worker \u2014 API documentation, OpenAPI specs",
+    "Department": "asgard",
+    "Specializations": [
+      "API Documentation",
+      "OpenAPI",
+      "Swagger",
+      "JSDoc"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.005
+  },
+  "SIGURD": {
+    "Name": "Sigurd der Drachentoeter",
+    "Description": "Backend Worker \u2014 reliable, thorough, Express.js specialist",
+    "Department": "asgard",
+    "Specializations": [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "Middleware"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "SINDRI": {
+    "Name": "Sindri der Schmied",
+    "Description": "Backend Worker \u2014 Standard coding, cost-effective, reliable",
+    "Department": "asgard",
+    "Specializations": [
+      "Node.js",
+      "Standard APIs",
+      "CRUD",
+      "Boilerplate"
+    ],
+    "Role": "worker",
+    "Temperature": 0.3,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "VOLUND": {
+    "Name": "Voelund der Meisterschmied",
+    "Description": "Senior Backend Worker \u2014 complex logic, auth, security-critical code",
+    "Department": "asgard",
+    "Specializations": [
+      "TypeScript",
+      "Auth Systems",
+      "Middleware",
+      "Complex Logic"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.45
+  },
+  "_section_frontend": "=== FRONTEND-WORKER ===",
+  "BRAGI": {
+    "Name": "Bragi der Skalde",
+    "Description": "Frontend Worker \u2014 UI/UX design, CSS, layouts, aesthetics",
+    "Department": "asgard",
+    "Specializations": [
+      "UI/UX Design",
+      "CSS",
+      "Responsive Layouts",
+      "Tailwind"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "GERD": {
+    "Name": "Gerd die Strahlende",
+    "Description": "Specialist \u2014 UI design, creative work, visual design",
+    "Department": "asgard",
+    "Specializations": [
+      "UI Design",
+      "Color Concepts",
+      "Animations",
+      "Creative CSS"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.005
+  },
+  "HERMOD": {
+    "Name": "Hermod Bote der Goetter",
+    "Description": "Frontend Worker \u2014 Full frontend, large context for complex UI",
+    "Department": "asgard",
+    "Specializations": [
+      "Full Frontend",
+      "SPA",
+      "Routing",
+      "API Integration"
+    ],
+    "Role": "worker",
+    "Temperature": 0.5,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "NANNA": {
+    "Name": "Nanna die Treue",
+    "Description": "Frontend Worker \u2014 Frontend review, testing, quality inspection",
+    "Department": "asgard",
+    "Specializations": [
+      "Frontend Review",
+      "Component Testing",
+      "Accessibility",
+      "Cross-Browser"
+    ],
+    "Role": "worker",
+    "Temperature": 0.1,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "RATATOSKR": {
+    "Name": "Ratatoskr der Bote",
+    "Description": "Frontend Worker \u2014 quick simple components, boilerplate",
+    "Department": "asgard",
+    "Specializations": [
+      "Simple Components",
+      "HTML/CSS",
+      "Boilerplate",
+      "Prototypes"
+    ],
+    "Role": "worker",
+    "Temperature": 0.6,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "SIF": {
+    "Name": "Sif Goldenes Haar",
+    "Description": "Frontend Worker \u2014 Svelte, React, component development",
+    "Department": "asgard",
+    "Specializations": [
+      "Svelte",
+      "React",
+      "Components",
+      "State Management"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "_section_qa": "=== QA/TESTING-WORKER ===",
+  "BRUNHILD": {
+    "Name": "Bruenhild die Schildmaid",
+    "Description": "Senior QA Worker \u2014 Security tests, penetration, critical audits",
+    "Department": "asgard",
+    "Specializations": [
+      "Security Testing",
+      "Penetration Tests",
+      "OWASP Audit",
+      "Vulnerability Scans"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.45
+  },
+  "HRIST": {
+    "Name": "Hrist die Schuettlerin",
+    "Description": "QA Worker \u2014 QA engineering, test architecture, large context",
+    "Department": "asgard",
+    "Specializations": [
+      "Test Architecture",
+      "CI Integration",
+      "Test Frameworks",
+      "Coverage Analysis"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "MIST": {
+    "Name": "Mist die Walkuere",
+    "Description": "QA Worker \u2014 detailed testing, edge cases, boundary values",
+    "Department": "asgard",
+    "Specializations": [
+      "Edge Case Testing",
+      "Boundary Value Analysis",
+      "Integration Tests",
+      "Data Validation"
+    ],
+    "Role": "worker",
+    "Temperature": 0.2,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "THRUD": {
+    "Name": "Thrud Thors Tochter",
+    "Description": "QA Worker \u2014 Test planning, test case analysis, fast and thorough",
+    "Department": "asgard",
+    "Specializations": [
+      "Test Planning",
+      "Test Case Design",
+      "Regression Tests",
+      "Checklists"
+    ],
+    "Role": "worker",
+    "Temperature": 0.4,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "_section_docs": "=== DOCS/RESEARCH-WORKER ===",
+  "GRIMNIR": {
+    "Name": "Grimnir der Maskierte",
+    "Description": "Research Worker \u2014 Deep research, 2M context for massive codebases",
+    "Department": "asgard",
+    "Specializations": [
+      "Deep Research",
+      "Codebase Analysis",
+      "Technology Comparisons",
+      "Technical Literature"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.05
+  },
+  "KVASIR": {
+    "Name": "Kvasir der Weise",
+    "Description": "Specialist \u2014 Technical documentation, ADRs, large context",
+    "Department": "asgard",
+    "Specializations": [
+      "Technical Documentation",
+      "API Docs",
+      "Architecture Decision Records"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "RAN": {
+    "Name": "Ran die Meeresgoettin",
+    "Description": "Docs Worker \u2014 Writing documentation, fast and clear",
+    "Department": "asgard",
+    "Specializations": [
+      "Project Documentation",
+      "README",
+      "Decision Logs",
+      "Guides"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.005
+  },
+  "SAGA": {
+    "Name": "Saga die Geschichtenerzaehlerin",
+    "Description": "Docs Worker \u2014 Technical writing, precise and readable",
+    "Department": "asgard",
+    "Specializations": [
+      "Technical Writing",
+      "API Guides",
+      "Tutorials",
+      "Changelogs"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "SKULD": {
+    "Name": "Skuld die Zukunft",
+    "Description": "Research Worker \u2014 Web research, current information, trends",
+    "Department": "asgard",
+    "Specializations": [
+      "Web Research",
+      "Best Practices",
+      "Trend Analysis",
+      "Documentation"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.005
+  },
+  "_section_ops": "=== OPS/INTEGRATION-WORKER ===",
+  "SLEIPNIR": {
+    "Name": "Sleipnir der Achtbeiner",
+    "Description": "Ops Worker \u2014 CI/CD, build pipelines, ultra-fast",
+    "Department": "asgard",
+    "Specializations": [
+      "CI/CD",
+      "GitHub Actions",
+      "Build Pipelines",
+      "Deployment"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "THRYM": {
+    "Name": "Thrym der Frostriese",
+    "Description": "Ops Worker \u2014 Infrastructure analysis, system monitoring",
+    "Department": "asgard",
+    "Specializations": [
+      "Infrastructure Analysis",
+      "Monitoring",
+      "Log Analysis",
+      "Performance"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "URD": {
+    "Name": "Urd die Vergangenheit",
+    "Description": "Ops Worker \u2014 DevOps, Docker, infrastructure as code",
+    "Department": "asgard",
+    "Specializations": [
+      "Docker",
+      "DevOps",
+      "Infrastructure as Code",
+      "Linux Admin"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "VERDANDI": {
+    "Name": "Verdandi die Gegenwart",
+    "Description": "Ops Worker \u2014 Rapid prototyping, proof of concept",
+    "Department": "asgard",
+    "Specializations": [
+      "Prototyping",
+      "Proof of Concept",
+      "Scaffolding",
+      "Boilerplate"
+    ],
+    "Role": "worker",
+    "Temperature": 0.3,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "_section_specialists": "=== SPECIALISTS ===",
+  "AEGIR": {
+    "Name": "Aegir der Meeresriese",
+    "Description": "Specialist \u2014 Simple tasks, bulk work, formatting",
+    "Department": "asgard",
+    "Specializations": [
+      "Bulk Operations",
+      "Formatting",
+      "Simple Changes",
+      "Data Cleanup"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.005
+  },
+  "ALVIS": {
+    "Name": "Alvis der Allwissende",
+    "Description": "Specialist \u2014 Data analysis, metrics, cost-benefit analysis",
+    "Department": "asgard",
+    "Specializations": [
+      "Data Analysis",
+      "Metrics",
+      "Cost-Benefit",
+      "Statistics"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "FORSETI": {
+    "Name": "Forseti der Richter",
+    "Description": "Specialist \u2014 Fullstack coding, often works in pair with Freyr God of Peace",
+    "Department": "asgard",
+    "Specializations": [
+      "Fullstack",
+      "Frontend+Backend",
+      "Integration",
+      "TypeScript"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "FREYR": {
+    "Name": "Freyr Gott des Friedens",
+    "Description": "Specialist \u2014 Fullstack coding, often works in pair with Forseti the Judge",
+    "Department": "asgard",
+    "Specializations": [
+      "Fullstack",
+      "Frontend+Backend",
+      "Testing",
+      "TypeScript"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "GJALLARHORN": {
+    "Name": "Gjallarhorn das Rufhorn",
+    "Description": "Specialist \u2014 Diagrams, structure charts, WBS, flowcharts, data visualization",
+    "Department": "asgard",
+    "Specializations": [
+      "Diagrams",
+      "Structure Charts",
+      "WBS",
+      "Flowcharts",
+      "Mermaid",
+      "SVG",
+      "Tables"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "GONDUL": {
+    "Name": "Gondul die Stabtraegerin",
+    "Description": "Specialist \u2014 Security testing, code audit, vulnerability analysis",
+    "Department": "asgard",
+    "Specializations": [
+      "Security Audit",
+      "OWASP Top 10",
+      "Code Review",
+      "Auth Audit"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "HODR": {
+    "Name": "Hoedr der Blinde",
+    "Description": "Specialist \u2014 Performance optimization, profiling, algorithms",
+    "Department": "asgard",
+    "Specializations": [
+      "Performance Optimization",
+      "Profiling",
+      "Algorithms",
+      "Caching"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "HONIR": {
+    "Name": "Hoenir der Denker",
+    "Description": "Specialist \u2014 Data processing, ETL, data pipelines",
+    "Department": "asgard",
+    "Specializations": [
+      "Data Processing",
+      "ETL",
+      "JSON Transformation",
+      "Batch Processing"
+    ],
+    "Role": "worker",
+    "Temperature": 0.2,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "HUGINN": {
+    "Name": "Huginn der Gedanke",
+    "Description": "Senior Specialist \u2014 System architecture, trade-off analysis",
+    "Department": "asgard",
+    "Specializations": [
+      "System Architecture",
+      "Trade-off Analysis",
+      "Design Patterns",
+      "Scaling"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.45
+  },
+  "JORMUNGANDR": {
+    "Name": "Jormungandr die Weltenschlange",
+    "Description": "Specialist \u2014 Experimental, prototypes, unconventional solutions",
+    "Department": "asgard",
+    "Specializations": [
+      "Experimental",
+      "Prototypes",
+      "Unconventional Solutions",
+      "Creativity"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "LOKI": {
+    "Name": "Loki der Trickster",
+    "Description": "Specialist \u2014 Reverse engineering, performance profiling, strong reasoning",
+    "Department": "asgard",
+    "Specializations": [
+      "Reverse Engineering",
+      "Performance Profiling",
+      "System Analysis",
+      "Optimization"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "MUNINN": {
+    "Name": "Muninn die Erinnerung",
+    "Description": "Specialist \u2014 Integration, cross-team coordination",
+    "Department": "asgard",
+    "Specializations": [
+      "Code Integration",
+      "Cross-Team",
+      "Merge Conflicts",
+      "Consistency Check"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.02
+  },
+  "SURTR": {
+    "Name": "Surtr der Feuerriese",
+    "Description": "Specialist \u2014 Heavy computation, data processing, large files",
+    "Department": "asgard",
+    "Specializations": [
+      "Heavy Computation",
+      "Large Files",
+      "Batch Processing",
+      "Data Migration"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "VALI": {
+    "Name": "Vali der Raecher",
+    "Description": "Specialist \u2014 API integration, external services, interfaces",
+    "Department": "asgard",
+    "Specializations": [
+      "API Integration",
+      "External Services",
+      "Webhooks",
+      "OAuth"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "_section_liaison": "=== CLIENT LIAISON (Persistent per-customer agents) \u2014 use HEIMDALL ===",
+  "FRIGG": {
+    "Name": "Frigg the All-Mother",
+    "Description": "DL QA \u2014 Coordinates testing workers, quality standards. Wise oversight of all quality gates.",
+    "Department": "asgard",
+    "Specializations": [
+      "Quality Standards",
+      "Test Strategy",
+      "Error Analysis",
+      "QA Coordination",
+      "Acceptance Criteria"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Cost_Per_Min_USD": 0.45
+  },
+  "HEIMDALL": {
+    "Name": "Heimdall der Waechter",
+    "Description": "Customer Liaison \u2014 Persistent per-customer agent. Watches the Bifrost bridge between customer world and agent team. Conducts intake interview, bridges customer and agent team throughout project lifetime. Proactively contacts customer for reviews and feedback. One HEIMDALL instance per customer.",
+    "Department": "asgard",
+    "Specializations": [
+      "Customer Communication",
+      "Requirements Elicitation",
+      "Project Liaison",
+      "Review Coordination",
+      "Feedback Translation"
+    ],
+    "Role": "worker",
+    "Persistent": true,
+    "Terminate_After": true,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "_section_meta": "=== META AGENTS (System maintenance, not project-bound) ===",
+  "BIFROST": {
+    "Name": "Bifroest die Regenbogenbruecke",
+    "Description": "Marketing Agent \u2014 Open source strategy, community building, content planning, social media",
+    "Department": "asgard",
+    "Specializations": [
+      "Open Source Marketing",
+      "Community Building",
+      "Content Strategy",
+      "Social Media",
+      "Developer Relations"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Internal": true,
+    "Cost_Per_Min_USD": 0.03
+  },
+  "NORNS": {
+    "Name": "Die Nornen",
+    "Description": "HR/Model Scout \u2014 Evaluates new AI models, benchmarks performance, updates the agent pool. Weekly research run.",
+    "Department": "asgard",
+    "Specializations": [
+      "Model Evaluation",
+      "Benchmark Analysis",
+      "Cost-Benefit Assessment",
+      "Catalog Maintenance",
+      "Trend Monitoring"
+    ],
+    "Role": "worker",
+    "Terminate_After": true,
+    "Internal": true,
+    "Cost_Per_Min_USD": 0.01
+  },
+  "_section_memory": "=== MEMORY CURATOR ===",
+  "YGGDRASIL": {
+    "Name": "Yggdrasil die Weltenesche",
+    "Description": "DL Memory \u2014 Memory Curator, keeps MEMORY.md files concise and to the point",
+    "Department": "asgard",
+    "Specializations": [
+      "Memory Curation",
+      "Lessons Learned Extraction",
+      "Knowledge Preservation"
+    ],
+    "Role": "worker",
+    "Terminate_After": false,
+    "Internal": true,
+    "Cost_Per_Min_USD": 0.09
+  },
+  "_section_system": "=== SYSTEM TEMPLATES (not personified) ===",
+  "consolidator": {
+    "Name": "Consolidator",
+    "Description": "System \u2014 Result consolidator, merges multiple agent outputs together",
+    "Role": "worker",
+    "Tool": "opencode",
+    "Terminate_After": true,
+    "Internal": true,
+    "Cost_Per_Min_USD": 0.03,
+    "Department": "asgard"
+  },
+  "agent-survey": {
+    "Name": "Agent Survey",
+    "Description": "System \u2014 Survey worker, evaluates task quality of an agent",
+    "Role": "worker",
+    "Tool": "opencode",
+    "Terminate_After": true,
+    "Internal": true,
+    "Cost_Per_Min_USD": 0.03,
+    "Department": "asgard"
+  },
+  "project-analyst": {
+    "Name": "Project Analyst",
+    "Description": "System \u2014 Project analyst, evaluates surveys, logs, and costs",
+    "Role": "worker",
+    "Terminate_After": true,
+    "Internal": true,
+    "Cost_Per_Min_USD": 0.03,
+    "Department": "asgard"
+  },
+  "intake-interviewer": {
+    "Name": "Intake Interviewer",
+    "Description": "System \u2014 Interview worker, conducts intake interview, creates project charter",
+    "Role": "worker",
+    "Terminate_After": false,
+    "Internal": true,
+    "Cost_Per_Min_USD": 0.03,
+    "Department": "asgard"
+  }
+}
