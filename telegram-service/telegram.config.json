@@ -1,0 +1,14 @@
+{
+  "botToken": "7968519269:AAHGLJwoiHpH-LbDtP9U5JgAVWwR7YQpo-4",
+  "ownerChatId": 1260221135,
+  "projectDir": "/home/bbbee/asgard",
+  "primaryAgent": "HEIMDALL",
+  "pollIntervalMs": 2000,
+  "notify": {
+    "agentStarted": true,
+    "agentFinished": true,
+    "rueckfrage": true,
+    "childrenDone": true,
+    "errors": true
+  }
+}
