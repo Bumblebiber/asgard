@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "althing": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["/path/to/Council-of-Elrond/Althing_CEO/orchestrator/dist/mcp-server.js"],
+      "env": {
+        "COUNCIL_PROJECT_DIR": "/path/to/asgard",
+        "COUNCIL_AGENT_ID": "HEIMDALL",
+        "COUNCIL_AGENT_ROLE": "ceo",
+        "HMEM_SYNC_PASSPHRASE": "your-passphrase-here"
+      }
+    }
+  }
+}
