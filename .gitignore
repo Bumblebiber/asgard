@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.hmem
+*.hmem-shm
+*.hmem-wal
+.env
+.mcp.json
+Agents
+responses/
+Quickstarts/
+*_OUTPUT.md
+*_STDOUT.log
+MSG_*.md
+REQ_*.json
+state.json
+logs/
